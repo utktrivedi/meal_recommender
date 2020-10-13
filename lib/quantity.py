@@ -5,6 +5,7 @@ class quantity():
         self.amount=amount
         self.unit=unit_
 
-    def from_string(self, )
-
-    def convert_to()      
+    def from_string(self):
+        pass
+    def convert_to(self):
+        pass      
