@@ -42,13 +42,14 @@ class unit():
             Exception
     
 class weight_unit(unit):
-    """This """
+    """Class to handle weight units like kg,g, pound, ounce"""
     kg=unit('kg','Weight',1,['kg','kgs','kilogram',"kilogramme"])
     si_unit = kg
     def __init__(self,name:str,si_conv_factor:float,aliases=None):
         super().__init__(name,"Weight",si_conv_factor, aliases)
 
 class volume_unit(unit):
+    """Class to handle volume units like liter, ml, fl oz"""
     meter_cube = unit("meter_cube","Volume", 1, ['m3','m^3','meter_cube','meter3','meter^3'])
     si_unit = meter_cube
     def __init__(self,name:str,si_conv_factor:float,aliases=None):
