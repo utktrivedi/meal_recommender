@@ -1,6 +1,3 @@
-#ToDo : Add type of measurement (Weight, Volume)
-#ToDo : How to incorportate t, tsp. , tablesoop etc as same inputs
-
 class unit():
     """
     Generic class to define a measurement unit. It contains following attributes
