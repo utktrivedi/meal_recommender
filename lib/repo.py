@@ -9,7 +9,7 @@ class repo():
     def __init__(self,name:str,file_path:str=None,object_list=None):
         self.name = name
         if file_path is None:
-            self.file_path=Path(str(Path.cwd())+name)
+            self.file_path=Path.cwd()/name
         else:
             self.file_path = Path(file_path)
 
@@ -24,7 +24,7 @@ class repo():
     def __len__(self):
         return len(self.object_list)
     
-    def __repr__(self, seperator=','):
+    def __repr__(self, seperator='\n'):
         """ Return random 10 records from repo"""
         if len(self.object_list)>10:
             return seperator.join(map(str,self.object_list[:10]))
