@@ -34,10 +34,10 @@ class unit():
         if alias in self.aliases:
             self.aliases.remove(alias)
     
-    def convertion_factor(self, target_unit:unit):
+    def convertion_factor(self, other):
         """This method return the converstion factors between units measuring same property e.g. weight, volume"""
-        if self.property == target_unit.property:
-            return self.si_conv_factor/target_unit.si_conv_factor
+        if self.property == other.property:
+            return self.si_conv_factor/other.si_conv_factor
         else:
             Exception
     

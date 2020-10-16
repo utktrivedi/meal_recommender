@@ -8,4 +8,13 @@ class quantity():
     def from_string(self):
         pass
     def convert_to(self):
-        pass      
+        pass
+
+colors = ['red','green','red','blue','green','red']
+d={}
+for color in colors:
+    if color not in d:
+        d[color]=0
+    print(str(d))
+    d[color] += 1
+    print(str(d))      

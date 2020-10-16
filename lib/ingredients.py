@@ -12,4 +12,3 @@ class ingredients():
                 self.aliases=aliases    #list of other aliases for ingredients e.g. g for gram
             else:
                 Exception
-        
