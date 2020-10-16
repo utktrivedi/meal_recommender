@@ -1,5 +1,6 @@
 import random
 import pickle
+from unit import unit
 
 class repo():
     """This class is created to act as database for objects of classes like unit() and ingrediants()
@@ -43,3 +44,9 @@ class repo():
         """Method to export the repository. This will act as permanent database to repo"""
         with open(filename,"wb") as f:
             pickle.dump(self,f)
+
+    def find_record(self,search_word:str):
+        """Method to handle various aliases of unit, ingredients etc and returns the standard record back"""
+        for record in self.object_list:
+            if(search_word in record.aliases):
+                return record
