@@ -27,7 +27,7 @@ class repo():
     def __repr__(self, seperator='\n'):
         """ Return random 10 records from repo"""
         if len(self.object_set)>10:
-            return seperator.join(map(str,self.object_set[:10]))
+            return seperator.join(map(str,list(self.object_set)[:10]))
         else:
             return seperator.join(map(str,self.object_set))
     
