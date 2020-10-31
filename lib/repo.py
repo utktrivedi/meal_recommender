@@ -40,13 +40,13 @@ class repo():
     def add_record(self,new_record:any):
         """ Method to add new record to repo"""
         self.object_set.add(new_record)
-        self.save()
+        #self.save()
     
     def remove_record(self,old_record:any):
         """ Method to remove a record from repo"""
         if (old_record in self.object_set):
             self.object_set.remove(old_record)
-        self.save()
+        #self.save()
     
     def save(self):
         """Method to export the repository. This will act as permanent database to repo"""
